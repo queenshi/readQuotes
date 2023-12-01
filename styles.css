@@ -205,13 +205,13 @@ footer {
     text-align: justify;
   }
   .quote-box h2 {
-    font-size: 15px;
+    font-size: 14px;
     margin-bottom: 35px;
     position: relative;
     text-align:justify;
   }
   .quote-box blockquote {
-    font-size: 20px;
+    font-size: 16px;
   } 
 
   .footer-content{
