@@ -197,3 +197,37 @@ footer {
     position: fixed;
   }
 }
+@media screen and (max-width: 500px) {
+  .quote-box h2 {
+    font-size: 28px;
+    margin-bottom: 35px;
+    position: relative;
+  }
+  .quote-box blockquote {
+    font-size: 24px;
+  } 
+
+  .footer-content{
+    padding: 5px;
+  }
+  .footer-content h3 {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+  .footer-content p {
+    font-size: 17px;
+  }
+  .socials {
+    margin: 20px; /* relative to font size of the root element*/
+  }
+  .socials a img {
+    width: 30px;
+  }
+  .footer-bottom {
+    padding: 12px 0;
+  }
+  .footer-bottom p {
+    font-size: 16px;
+  }
+}
+
