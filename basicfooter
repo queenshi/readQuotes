@@ -1,0 +1,5 @@
+<footer>
+  <h2>Made with ❤️ Queenshi Jain</h2>
+</footer>
+footer { position: absolute; background-color: bisque; width: 100%; color:
+rgb(80, 22, 22); } footer { height: 10vh; bottom: 0; }

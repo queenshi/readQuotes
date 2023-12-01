@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Playfair+Display:ital@1&family=Roboto+Condensed:wght@300&family=Roboto:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #bbc6fa;
+  font-family: "Libre Baskerville", serif;
+}
+.quote-box {
+  background: #fff;
+  width: 750px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 10px 20px 0 px rgba(0, 0, 0, 0.15);
+}
+.quote-box h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  position: relative;
+}
+.quote-box h2::after {
+  content: "";
+  width: 75px;
+  height: 3px;
+  border-radius: 3px;
+  background: rgba(23, 124, 229);
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%); /*horizintally centerd*/
+}
+
+.quote-box blockquote {
+  font-size: 26px;
+  min-height: 110px;
+}
+.quote-box blockquote::before,
+.quote-box blockquote::after {
+  content: '""';
+}
+.quote-box span {
+  display: block;
+  margin-top: 10px;
+  float: right;
+  position: relative;
+}
+.quote-box span::before {
+  /*linw hich is front of authors name*/
+  content: " ";
+  width: 20px;
+  height: 2px;
+  background: rgb(23, 124, 229);
+  position: absolute;
+  top: 50%;
+  left: -30px;
+}
+
+.quote-box div {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.quote-box button {
+  background: rgb(23, 124, 229);
+  color: #fff;
+  border-radius: 25px;
+  border: 1px solid rgb(23, 124, 229);
+  width: 150px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  cursor: pointer;
+}
+.quote-box button img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.quote-box button:nth-child(2) {
+  background: transparent;
+  color: #333;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgb(242, 225, 204);
+  height: 5;
+  width: 100vw;
+  font-family: sans-serif;
+  padding-top: 10px;
+  color: rgb(37, 8, 8);
+}
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.footer-content h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+.footer-content p {
+  max-width: 500px;
+  margin: 10px auto;
+  font-family: "Libre Baskerville", serif;
+  line-height: 30px; /* seer the distence betweeen line of text"*/
+  font-size: 20px;
+}
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0; /* relative to font size of the root element*/
+}
+.socials li {
+  margin: 0 10px;
+}
+.socials a {
+  text-decoration: none;
+  transition: color 0.4s ease;
+}
+
+.socials a img {
+  width: 48px;
+  height: auto;
+  transition: color 0.4s ease;
+}
+.socials a:hover img {
+  transform: scale(1.1);
+  filter: brightness(50%);
+  /* background-color: yellow;*/
+}
+.footer-bottom {
+  background: black;
+  color: gray;
+  width: 100vw;
+  padding: 20px 0;
+  text-align: center;
+  text-decoration: none;
+}
+.footer-bottom p {
+  color: white;
+  font-size: 20px;
+}
+.footer-bottom a {
+  color: white;
+  text-decoration: none;
+}
+.footer-bottom a:hover {
+  color: cornflowerblue;
+}
+.footer-bottom span {
+  opacity: 4;
+  font-weight: 200;
+}
+@media (min-height: 680px), screen and (orientation: portrait) {
+  img {
+    max-width: 100%;
+    height: 20;
+  }
+  body {
+    font-size: 10px;
+    line-height: 1;
+  }
+  header {
+    padding: 5px;
+  }
+
+  nav ul li {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  main {
+    padding: 10px;
+  }
+  footer {
+    position: fixed;
+  }
+}
